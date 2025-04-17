@@ -182,3 +182,22 @@ JOIN CLIENT c ON s.idcli = c.idcli
 GROUP BY c.idcli, c.city, c.country
 ORDER BY purchase_count DESC;
 
+Database Structure
+I created a sales database with four tables:
+CLIENT: Stores customer information (city, region, country)
+PRODUCT: Contains product details (name, category, prices, supplier)
+DATE: A calendar reference table with months, quarters, and years
+SALES: Records each sale transaction linking products, dates, and clients
+    
+What the Queries Tell You;
+Total sales by product category: This shows you which product categories are making the most money. For example, you might see that Electronics brings in more revenue than Accessories.
+Monthly sales trend: This shows how your sales have changed month by month throughout the year. You can spot seasonal patterns, like whether you sell more in December or during summer months.
+Top performing client: This identifies which customers are spending the most money with you. The query ranks clients by total purchases, showing their location and total spend.
+Product Profitability analysis: This reveals which products are most profitable, not just which ones sell the most. It calculates actual profit by subtracting the cost from the selling price for each product.
+Quarterly sales by Region: This breaks down sales by geographic region for each quarter, helping you understand which regions perform best during different times of the year.
+Year over Year Growth: This compares this year's sales to last year's and calculates the percentage increase or decrease, giving you a clear picture of your business growth.
+Sales Performance by Supplier: This shows which suppliers' products are generating the most revenue, which could help with negotiating better terms with high-performing suppliers.
+Average Order value: This calculates how much a typical order is worth. Useful for understanding customer spending habits and setting promotional thresholds.
+Product sales distribution: This tells you both how many times each product was sold and how much total revenue it generated, helping identify both popular and high-value products.
+Client Purchase frequency: This shows how often each customer buys from you, identifying your most loyal customers even if they don't spend the most money per order.
+
